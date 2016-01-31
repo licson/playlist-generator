@@ -1,0 +1,22 @@
+{
+  "name": "playlist-generator",
+  "version": "1.0.0",
+  "description": "Generates HTML file as music playlists",
+  "main": "generate.js",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "mu2": "^0.5.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Licson Lee",
+  "license": "MIT",
+  "keywords": [
+    "playlist",
+    "html",
+    "mustache",
+    "music"
+  ]
+}
