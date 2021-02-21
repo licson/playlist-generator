@@ -20,7 +20,7 @@ var generate = function(album, composer){
 		result.forEach(function(item, i){
 			var ext = item.split('.').pop().toLowerCase();
 			var name = item.replace('.' + ext, '');
-			var needConversion = ext != 'mp3' ? true : false;
+			var needConversion = ['mp3', 'wav', 'ogg', 'aac', 'webm', 'mp4', 'flac'].indexOf(ext) > -1 ? false : true;
 
 			if(!needConversion){
 				if(ext !== item){
@@ -54,7 +54,7 @@ var generate = function(album, composer){
 var album = 'Untitled Album', composer = 'Unknown Composer';
 
 program
-	.version('1.0.0')
+	.version('1.0.1')
 	.option('-a, --album [album]', 'Album name')
 	.option('-c, --composer [composer]', 'Composer')
 	.parse(process.argv);

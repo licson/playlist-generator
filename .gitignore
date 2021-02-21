@@ -1,0 +1,14 @@
+# node.js modules
+node_modules/
+
+# Generate playlist
+index.html
+
+# Media Files
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.mp4
+*.webm
+*.aac
